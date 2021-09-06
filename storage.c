@@ -11,9 +11,9 @@ data_block* data_block_generate(unsigned int start_address,unsigned char data_si
 	return temp;
 }
 
-void storage_init()
+void storage_init(int start_address)
 {
-	STORAGE.current_address = 0;
+	STORAGE.current_address = start_address;
 	STORAGE.storage_size = 0;
 }
 

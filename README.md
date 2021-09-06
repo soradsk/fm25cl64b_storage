@@ -1,1 +1,3 @@
 # fm25cl64b_storage
+# storage优化fm25cl64b芯片的结构体存储
+# 先使用storage_init初始化才能使用，start_address预留地址做芯片标记；若不预留，start_address设置位0开始
