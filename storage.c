@@ -50,7 +50,7 @@ void storage_select(storage storage_,void** address,unsigned int key)
 	}
 }
 
-void stroage_update(storage storage_,void** address,unsigned char data_size,unsigned int key)
+void storage_update(storage storage_,void** address,unsigned char data_size,unsigned int key)
 {
 	unsigned char i;
 	data_block* db;
@@ -63,10 +63,3 @@ void stroage_update(storage storage_,void** address,unsigned char data_size,unsi
 		FramWriteByte(db->start_address + i,*(address_ + i));
 	}
 }
-
-/*
-void stroage_delete(storage storage_,unsigned char key)
-{
-	
-}
-*/
